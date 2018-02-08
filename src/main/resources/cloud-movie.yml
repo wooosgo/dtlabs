@@ -1,0 +1,30 @@
+
+server:
+  port: ${PORT:8888}
+
+management:
+  security:
+    enabled: false
+
+spring:
+  application:
+    name: cloud-movie-config-server
+
+
+
+
+---
+
+spring:
+  profiles: dev
+
+server:
+  port: ${PORT:8080}
+
+management:
+  security:
+    enabled: false
+
+spring:
+  application:
+    name: cloud-movie-config-server
